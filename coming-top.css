@@ -1,0 +1,665 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,900&display=swap');
+
+
+.movies-gallery{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.gallery-cont{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.movies-gallery img{
+  border-radius: 14px 14px 0 0;
+  width: 100%;
+  height: 380px;
+}
+
+
+.gallery-item{
+  height: 415px;
+  width: 18.5%;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  border-radius: 14px;
+  transition: 0.5s ease;
+  cursor: pointer;
+  background-color: var(--skin-color);
+  box-shadow: 0px 0px 10px 1px rgba(180, 180, 180, 0.69);
+}
+
+.gallery-item:hover {
+  background-color: rgb(225, 229, 231);
+
+}
+.gallery-item:hover .gallery-rating p,
+.gallery-item:hover .gallery-name h2{
+  color: #333;
+}
+
+.galley-item-cont {
+  width: 100%;
+  height: 350px;
+}
+
+.gallery-rating{
+  padding: 2px 0;
+  width: 49%;
+  border-radius: 10px;
+}
+
+.gallery-text {
+  text-align: center;
+  margin: 1.7% 5% 0;
+  width: 90%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.gallery-rating i{
+  font-size: 18px;
+  color: #d6ac21;
+}
+
+.gallery-rating p {
+  font-weight: 600;
+  font-family: 'Source Sans 3',sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  color: rgb(255, 255, 255);
+}
+
+.gallery-name h2{
+  font-weight: 600;
+  font-family: 'Source Sans 3',sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  color: rgb(255, 255, 255);
+}
+
+.gallery-name {
+  width: 49%;
+}
+
+#upcoming {
+  font-style: italic;
+  width: 90%;
+  padding: 0 0 1.5% 0;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color: var(--skin-color);
+}
+
+
+
+
+
+/* Media   Media   Media   Media*/
+
+
+
+@media (max-width: 1250px){
+
+  .movies-gallery img {
+    width: 100%;
+    height: 70%;
+    border-radius: 20px;
+}
+
+  .gallery-cont {
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gallery-rating i {
+  font-size: 15px;
+  color: #d6ac21;
+  padding-top: 2px;
+}
+
+.gallery-rating {
+  display: flex;
+  padding: 4px 2px;
+  border: 1px solid rgb(180, 180, 18);
+  margin-top: 5px;
+  margin-left: 3px;
+  width: 40%;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+
+.gallery-name h2 {
+  font-family: 'Poppins',sans-serif;
+  font-size: 13px;
+  color: #333;
+}
+
+.gallery-name {
+  margin-left: 7px;
+  margin-top: 2px;
+}
+
+.gallery-rating p {
+  font-family: 'Poppins',sans-serif;
+  font-size: 15px;
+  color: rgb(100, 98, 98);
+}
+
+.galley-item-cont {
+  width: 94%;
+  height: 340px;
+  padding: 5px 0;
+}
+
+.gallery-item {
+  width: 31%;
+  background-color: white;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  -webkit-box-shadow: 3px 2px 15px 1px rgb(116 116 116 / 69%);
+  box-shadow: 3px 2px 15px 1px rgb(0 0 0 / 42%);
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.gallery-text {
+  margin-top: 7%;
+}
+
+
+}
+
+@media (max-width: 1050px){
+
+  .movies-gallery img {
+    width: 100%;
+    height: 70%;
+    border-radius: 20px;
+}
+
+  .gallery-cont {
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gallery-rating i {
+  font-size: 15px;
+  color: #d6ac21;
+  padding-top: 2px;
+}
+
+.gallery-rating {
+  display: flex;
+  padding: 4px 2px;
+  border: 1px solid rgb(180, 180, 18);
+  margin-top: 5px;
+  margin-left: 3px;
+  width: 40%;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+
+.gallery-name h2 {
+  font-family: 'Poppins',sans-serif;
+  font-size: 13px;
+  color: #333;
+}
+
+.gallery-name {
+  margin-left: 7px;
+  margin-top: 2px;
+}
+
+.gallery-rating p {
+  font-family: 'Poppins',sans-serif;
+  font-size: 15px;
+  color: rgb(100, 98, 98);
+}
+
+.gallery-item {
+  width: 31%;
+  background-color: white;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  -webkit-box-shadow: 3px 2px 15px 1px rgb(116 116 116 / 69%);
+  box-shadow: 3px 2px 15px 1px rgb(0 0 0 / 42%);
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+}
+
+@media (max-width: 900px){
+
+  .gallery-cont {
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gallery-rating i {
+  font-size: 10px;
+  color: #d6ac21;
+  padding-top: 2px;
+}
+
+.gallery-rating {
+  display: flex;
+  padding: 2px 2px 1px;
+  border: 1px solid rgb(180, 180, 18);
+  margin-top: 5px;
+  margin-left: 3px;
+  width: 40%;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+
+.gallery-name h2 {
+  font-family: 'Poppins',sans-serif;
+  font-size: 11px;
+  color: #333;
+}
+
+.gallery-name {
+  margin-left: 7px;
+  margin-top: 2px;
+}
+
+.gallery-rating p {
+  font-family: 'Poppins',sans-serif;
+  font-size: 12px;
+  color: rgb(100, 98, 98);
+}
+
+.gallery-item {
+  width: 31%;
+  background-color: white;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  -webkit-box-shadow: 3px 2px 15px 1px rgb(116 116 116 / 69%);
+  box-shadow: 3px 2px 15px 1px rgb(0 0 0 / 42%);
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.galley-item-cont {
+  width: 94%;
+  height: 260px;
+  padding: 5px 0;
+}
+
+}
+
+@media (max-width: 700px){
+
+  .galley-item-cont {
+    width: 94%;
+    height: 280px;
+    padding: 5px 0;
+}
+
+.movies-gallery img {
+  width: 100%;
+  height: 73%;
+  border-radius: 20px;
+}
+
+  .gallery-cont {
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gallery-rating i {
+  font-size: 10px;
+  color: #d6ac21;
+  padding-top: 2px;
+}
+
+.gallery-rating {
+  display: flex;
+  padding: 2px 2px 1px;
+  border: 1px solid rgb(180, 180, 18);
+  margin-top: 5px;
+  margin-left: 3px;
+  width: 40%;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+
+.gallery-name h2 {
+  font-family: 'Poppins',sans-serif;
+  font-size: 11px;
+  color: #333;
+}
+
+.gallery-name {
+  margin-left: 7px;
+  margin-top: 2px;
+}
+
+.gallery-rating p {
+  font-family: 'Poppins',sans-serif;
+  font-size: 12px;
+  color: rgb(100, 98, 98);
+}
+
+.gallery-item {
+  width: 31%;
+  background-color: white;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  -webkit-box-shadow: 3px 2px 15px 1px rgb(116 116 116 / 69%);
+  box-shadow: 3px 2px 15px 1px rgb(0 0 0 / 42%);
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.gallery-text {
+  margin-top: 4%;
+}
+
+}
+
+@media (max-width: 600px){
+
+  .gallery-cont {
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gallery-rating i {
+  font-size: 10px;
+  color: #d6ac21;
+  padding-top: 2px;
+}
+
+.gallery-rating {
+  display: flex;
+  padding: 2px 2px 1px;
+  border: 1px solid rgb(180, 180, 18);
+  margin-top: 5px;
+  margin-left: 3px;
+  width: 40%;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+
+.gallery-name h2 {
+  font-family: 'Poppins',sans-serif;
+  font-size: 10px;
+  color: #333;
+}
+
+.gallery-name {
+  margin-left: 7px;
+  margin-top: 2px;
+}
+
+.gallery-rating p {
+  font-family: 'Poppins',sans-serif;
+  font-size: 12px;
+  color: rgb(100, 98, 98);
+}
+
+.gallery-item {
+  width: 31%;
+  background-color: white;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  -webkit-box-shadow: 3px 2px 15px 1px rgb(116 116 116 / 69%);
+  box-shadow: 3px 2px 15px 1px rgb(0 0 0 / 42%);
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.galley-item-cont {
+  height: 240px;
+  width: 93%;
+  margin-top: 2px;
+}
+
+.movies-gallery img {
+  width: 100%;
+  height: 70%;
+  border-radius: 20px;
+}
+
+}
+
+@media (max-width: 500px){
+
+  .gallery-cont {
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gallery-rating i {
+  font-size: 10px;
+  color: #d6ac21;
+  padding-top: 2px;
+}
+
+.gallery-rating {
+  display: flex;
+  padding: 2px 2px 1px;
+  border: 1px solid rgb(180, 180, 18);
+  margin-top: 5px;
+  margin-left: 3px;
+  width: 40%;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+
+.gallery-name h2 {
+  font-family: 'Poppins',sans-serif;
+  font-size: 10px;
+  color: #333;
+}
+
+.gallery-name {
+  margin: 4px 2px 0 4px;
+}
+
+.gallery-rating p {
+  font-family: 'Poppins',sans-serif;
+  font-size: 12px;
+  color: rgb(100, 98, 98);
+}
+
+.gallery-item {
+  width: 31%;
+  background-color: white;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  -webkit-box-shadow: 3px 2px 15px 1px rgb(116 116 116 / 69%);
+  box-shadow: 3px 2px 15px 1px rgb(0 0 0 / 42%);
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+}
+
+@media (max-width: 450px){
+
+  .gallery-cont {
+    width: 92%;
+    padding: 0 9%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gallery-rating i {
+  font-size: 10px;
+  color: #d6ac21;
+  padding-top: 2px;
+}
+
+.gallery-rating {
+  display: flex;
+  padding: 2px 2px 1px;
+  border: 1px solid rgb(180, 180, 18);
+  margin-top: 5px;
+  margin-left: 3px;
+  width: 40%;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+
+.gallery-name h2 {
+  font-family: 'Poppins',sans-serif;
+  font-size: 12px;
+  color: #333;
+}
+
+.gallery-name {
+  margin: 1px 2px 0 4px;
+}
+
+.gallery-rating p {
+  font-family: 'Poppins',sans-serif;
+  font-size: 12px;
+  color: rgb(100, 98, 98);
+}
+
+.gallery-item {
+  width: 45%;
+  background-color: white;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  -webkit-box-shadow: 3px 2px 15px 1px rgb(116 116 116 / 69%);
+  box-shadow: 3px 2px 15px 1px rgb(0 0 0 / 42%);
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+}
+
+
+
+
+
+
+
+
+@media (min-width: 320px) and (max-width: 400px){
+
+  #upcoming {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    padding: 0 5%;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+  }
+
+  .gallery-cont {
+    width: 94%;
+    padding: 0 3%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.galley-item-cont {
+  height: 275px;
+  width: 96%;
+  margin-top: 0;
+}
+
+.gallery-item {
+  width: 48%;
+  background-color: white;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  -webkit-box-shadow: 3px 2px 15px 1px rgb(116 116 116 / 69%);
+  box-shadow: 3px 2px 15px 1px rgb(0 0 0 / 42%);
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.movies-gallery img {
+  width: 100%;
+  height: 75%;
+  border-radius: 20px;
+}
+
+.gallery-rating i {
+  font-size: 10px;
+  color: #d6ac21;
+  padding-top: 2px;
+}
+
+.gallery-rating {
+  display: flex;
+  padding: 2px 2px 1px;
+  border: 1px solid rgb(180, 180, 18);
+  margin-top: 5px;
+  margin-left: 3px;
+  width: 40%;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+
+.gallery-name h2 {
+  font-family: 'Poppins',sans-serif;
+  font-size: 12px;
+  margin: 3% 0 0;
+  color: #333;
+}
+
+.gallery-name {
+  margin: 1px 2px 0 4px;
+}
+
+.gallery-rating p {
+  font-family: 'Poppins',sans-serif;
+  font-size: 12px;
+  color: rgb(100, 98, 98);
+}
+
+
+
+}
